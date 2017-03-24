@@ -1,0 +1,23 @@
+<E1 xml:id="e1">
+  <E2>text1</E2>
+  <E3><E4>text2</E4></E3>
+  <E5>text3<E6>text4</E6>text5</E5>
+</E1>
+
+{xml: {
+    "e1" : {_: {E1 : [">e2", ">e3", ">e5"], "@": [{"xml:id" : "e1"}]}}, ns: "", _parent : null},
+    ">e2" : {_: {E2 : [">t1"]}, ns: "", _parent : "e1"},
+    ">t1" : {t: "text1", _parent : "e1"},
+    ">e3" : {_: {E3 : [">e4"]}, ns: "", _parent : "e1"},
+    ">e4" : {_: {E4 : [">t2"]}, ns: "", _parent : ">e3"},
+    ">t2" : {_: "text2", _parent : ">e4"},
+    ">e5" : {_: {E5 : [">t3", ">e6", ">t5"]}, ns: "", _parent : "e1"},
+    ">t3" : {_: "text3", _parent : ">e5"},
+    ">e6" : {_: {E6 : [">t4"]}, ns: "", _parent : ">e5"},
+    ">t4" : {_: {E5 : [">t3", ">e6", ">t5"]}, ns: "", _parent : "e1"},
+  ],
+  declaration: ...
+}}
+
+
+"e1" : {name: "E1", children : [">e2", ">e3", ">e5"], "@": [{"xml:id" : "e1"}]}}, ns: "", parent : null},
