@@ -30,14 +30,16 @@ npm run build-web
 
 ## Usage
 
-```
-// ES6
+ES6
+```JavaScript
 import {flattenXML, hydrateXML} from "squash-xml-json"
-
-// node
+```
+node
+```JavaScript
 var sxj = require("squash-xml-json")
-
-// browser
+```
+Browser
+```html
 <script src="squash-xml-json-web.js"></script>
 <script>console.log(sxj)</script>
 ```
@@ -58,7 +60,7 @@ let json = flattenXML(xml)
 
 This will result in a JSON object containing each XML node. An element will look like this:
 
-```JSON
+```JavaScript
 {
 	'p1': {
 		'name': 'p',
@@ -84,7 +86,7 @@ The element includes its children's and parent's IDs, which can be used to retri
 
 The IDs of processing instructions and text nodes before the root element are listed in a dedicated property called  `>before_root`.
 
-```JSON
+```JavaScript
 {
 	'>before_root': ['>t8b1ef55d'],
 	'>t8b1ef55d': {
