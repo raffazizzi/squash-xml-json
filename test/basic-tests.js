@@ -155,8 +155,7 @@ describe("Hydrate XML", () => {
   })
 
   it('should generate XML', (done) => {
-    // assert.ok(hydrateXML(json) == xml)
-    console.log(hydrateXML(json) )
+    assert.ok(hydrateXML(json).length > 0)
     done()
   })
 
