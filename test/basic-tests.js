@@ -136,6 +136,11 @@ describe('Flatten XML and skipSpace', () => {
     done();
   })
 
+  it('should have handle before root correctly', (done) => {
+    assert.ok(json[">before_root"].length == 1)
+    done();
+  })
+
 });
 
 describe("Hydrate XML", () => {

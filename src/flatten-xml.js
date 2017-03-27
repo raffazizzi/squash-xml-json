@@ -61,9 +61,6 @@ export function flattenXML (xmlstring, options = {}) {
       parent = stacks.elements[stacks.elements.length-1]
       output[parent].children.push(id)
     }
-    else {
-      before_root.push(id)
-    }
 
     // add to stack
     stacks.elements.push(id)
