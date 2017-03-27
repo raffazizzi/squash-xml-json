@@ -15,7 +15,7 @@ let options = {
 export function flattenXML (xmlstring, options = {}) {
 
   let output = {}
-  let before_root = output.before_root = []
+  let before_root = output[">before_root"] = []
 
   let stacks = {
     text : [],
