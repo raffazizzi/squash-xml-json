@@ -46,7 +46,7 @@ export function hydrateXML (json) {
 
   // Start with "nodes" before the root element
   // Only text nodes and instructions should be there.
-  for (let id of json.before_root) {
+  for (let id of json[">before_root"]) {
     let node = json[id]
     if (node.t) {
       xmlstring += node.t
