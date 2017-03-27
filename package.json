@@ -2,7 +2,7 @@
   "name": "squash-xml-json",
   "description": "A library to convert XML data to a flat JSON structure, and back.",
   "version": "0.0.1",
-  "main": "./lib/library.js",
+  "main": "./lib/squash-xml-json.js",
   "devDependencies": {
     "babel-cli": "^6.2.4",
     "babel-preset-es2015": "^6.3.13",
